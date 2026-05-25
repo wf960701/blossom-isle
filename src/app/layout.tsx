@@ -44,6 +44,20 @@ export default function RootLayout({
                 <i className="fa-regular fa-tags" />
                 标签
               </Link>
+              <Link
+                href="/search"
+                className="text-text-secondary hover:text-rose-600 transition-colors flex items-center gap-1.5"
+              >
+                <i className="fa-regular fa-search" />
+                搜索
+              </Link>
+              <Link
+                href="/friends"
+                className="text-text-secondary hover:text-rose-600 transition-colors flex items-center gap-1.5"
+              >
+                <i className="fa-regular fa-link" />
+                友链
+              </Link>
             </div>
           </nav>
         </header>
