@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --color-blossom-pink: #f472b6;
+  --color-blossom-rose: #fb7185;
+  --color-blossom-sky: #38bdf8;
+  --color-blossom-leaf: #4ade80;
+}
+
+/* 自定义滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* 文章内容样式 */
+.prose {
+  max-width: none;
+}
+.prose h2 {
+  @apply mt-10 mb-4 text-2xl font-bold text-gray-800;
+}
+.prose h3 {
+  @apply mt-8 mb-3 text-xl font-semibold text-gray-700;
+}
+.prose p {
+  @apply mb-4 leading-7 text-gray-600;
+}
+.prose a {
+  @apply text-blossom-sky underline decoration-1 underline-offset-2 transition-colors hover:text-blossom-pink;
+}
+.prose pre {
+  @apply my-6 overflow-x-auto rounded-xl bg-gray-900 p-4 text-sm text-gray-100;
+}
+.prose code {
+  @apply rounded bg-gray-100 px-1.5 py-0.5 text-sm text-pink-600;
+}
+.prose pre code {
+  @apply bg-transparent p-0 text-gray-100;
+}
+.prose blockquote {
+  @apply my-6 border-l-4 border-blossom-sky pl-4 italic text-gray-500;
+}
+.prose ul {
+  @apply my-4 list-disc pl-6 text-gray-600;
+}
+.prose ol {
+  @apply my-4 list-decimal pl-6 text-gray-600;
+}
+.prose li {
+  @apply mb-1;
+}
+.prose img {
+  @apply my-6 rounded-xl;
+}
