@@ -81,7 +81,7 @@ export default async function AdminPage() {
 
         {!articles || articles.length === 0 ? (
           <div className="text-center py-12">
-            <i className="fa-light fa-file-lines text-4xl text-rose-200 mb-3" />
+            <i className="fa-regular fa-file-lines text-4xl text-rose-200 mb-3" />
             <p className="text-text-muted text-sm">还没有文章</p>
             <Link
               href="/admin/articles/new"

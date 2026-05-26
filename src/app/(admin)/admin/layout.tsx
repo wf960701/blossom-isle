@@ -32,7 +32,7 @@ export default async function AdminLayout({
               href="/admin"
               className="flex items-center gap-2 text-rose-600 font-semibold"
             >
-              <i className="fa-regular fa-pagoda" />
+              <i className="fa-regular fa-tree" />
               <span>花屿管理</span>
             </Link>
             <span className="text-xs text-text-muted bg-rose-50 px-2 py-0.5 rounded-full">

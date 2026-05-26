@@ -78,7 +78,7 @@ export default async function TagFilterPage({
       {/* 文章列表 */}
       {!articles || articles.length === 0 ? (
         <div className="text-center py-16">
-          <i className="fa-light fa-tag text-5xl text-rose-200 mb-4" />
+          <i className="fa-regular fa-tag text-5xl text-rose-200 mb-4" />
           <p className="text-text-secondary flex items-center justify-center gap-1">
             <i className="fa-regular fa-face-sad-tear" />
             该标签下还没有文章

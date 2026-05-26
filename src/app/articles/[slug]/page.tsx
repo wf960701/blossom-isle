@@ -112,7 +112,7 @@ export default async function ArticlePage({
           返回首页
         </Link>
         <div className="flex items-center gap-1 text-xs text-text-muted">
-          <i className="fa-regular fa-sparkles" />
+          <i className="fa-regular fa-star" />
           读完啦
         </div>
       </div>

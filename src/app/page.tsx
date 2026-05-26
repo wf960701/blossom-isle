@@ -29,7 +29,7 @@ export default async function Home() {
         <div className="relative mx-auto max-w-4xl px-6 pt-20 pb-16 text-center">
           {/* 头像 */}
           <div className="mx-auto mb-6 w-20 h-20 rounded-full bg-gradient-to-br from-rose-300 via-pink-400 to-rose-500 shadow-lg shadow-rose-200/50 flex items-center justify-center">
-            <i className="fa-duotone fa-solid fa-tree-palm text-3xl text-white/90" />
+            <i className="fa-solid fa-tree text-3xl text-white/90" />
           </div>
 
           {/* 标题 */}
@@ -50,7 +50,7 @@ export default async function Home() {
           {/* 装饰分隔 */}
           <div className="mt-8 flex items-center justify-center gap-3">
             <span className="h-px w-12 bg-gradient-to-r from-transparent to-rose-300" />
-            <i className="fa-regular fa-sparkle text-rose-300 text-lg" />
+            <i className="fa-regular fa-star text-rose-300 text-lg" />
             <span className="h-px w-12 bg-gradient-to-l from-transparent to-rose-300" />
           </div>
 
@@ -107,7 +107,7 @@ export default async function Home() {
 
         {!articles || articles.length === 0 ? (
           <div className="text-center py-20">
-            <i className="fa-light fa-seedling text-5xl text-rose-200 mb-6" />
+            <i className="fa-regular fa-seedling text-5xl text-rose-200 mb-6" />
             <p className="text-text-secondary text-lg">花园还在播种中</p>
             <p className="text-text-muted text-sm mt-2 flex items-center justify-center gap-1">
               <i className="fa-regular fa-pen"></i>

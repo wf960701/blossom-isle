@@ -1,7 +1,30 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { Noto_Sans_SC, Noto_Serif_SC, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
+
+const notoSansSC = Noto_Sans_SC({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+  variable: "--font-noto-sans-sc",
+  display: "swap",
+});
+
+const notoSerifSC = Noto_Serif_SC({
+  subsets: ["latin"],
+  weight: ["400", "600", "700"],
+  variable: "--font-noto-serif-sc",
+  display: "swap",
+});
+
+const playfairDisplay = Playfair_Display({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  style: ["normal", "italic"],
+  variable: "--font-playfair",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: "花屿 - 个人知识花园",
@@ -15,7 +38,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="zh-CN">
-      <body className="min-h-screen">
+      <body className={`min-h-screen ${notoSansSC.variable} ${notoSerifSC.variable} ${playfairDisplay.variable}`}>
         {/* 花瓣飘落装饰 */}
         <PetalAnim />
 
@@ -26,7 +49,7 @@ export default function RootLayout({
               href="/"
               className="site-title text-xl font-semibold text-rose-600 hover:text-rose-700 transition-colors"
             >
-              <i className="fa-regular fa-pagoda mr-2 text-rose-400 text-lg" />
+              <i className="fa-regular fa-tree mr-2 text-rose-400 text-lg" />
               花屿
             </Link>
             <div className="flex items-center gap-6 text-sm">
@@ -69,13 +92,13 @@ export default function RootLayout({
         <footer className="relative z-10 mt-20 border-t border-rose-100/50">
           <div className="mx-auto max-w-4xl px-6 py-10 text-center">
             <p className="text-sm text-text-muted flex items-center justify-center gap-2">
-              <i className="fa-regular fa-pagoda text-rose-300" />
+              <i className="fa-regular fa-tree text-rose-300" />
               花屿 · 种一座属于自己的知识花园
             </p>
             <p className="mt-3 text-xs text-text-muted/60 flex items-center justify-center gap-1.5">
               <i className="fa-regular fa-seedling" />
               Powered by Next.js & Supabase
-              <i className="fa-regular fa-sparkles" />
+              <i className="fa-regular fa-star" />
             </p>
           </div>
         </footer>

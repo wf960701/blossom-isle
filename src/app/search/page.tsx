@@ -92,7 +92,7 @@ export default function SearchPage() {
         </div>
         <h1 className="text-2xl font-bold text-text-primary">搜索文章</h1>
         <p className="mt-2 text-text-secondary text-sm flex items-center justify-center gap-1">
-          <i className="fa-regular fa-sparkle text-rose-300" />
+          <i className="fa-regular fa-star text-rose-300" />
           在花屿中探寻你感兴趣的内容
         </p>
       </header>
@@ -181,7 +181,7 @@ export default function SearchPage() {
         {/* 搜索结果为空 */}
         {searched && !loading && results.length === 0 && (
           <div className="text-center py-16">
-            <i className="fa-light fa-map-pin text-5xl text-rose-200 mb-5" />
+            <i className="fa-regular fa-map-pin text-5xl text-rose-200 mb-5" />
             <p className="text-text-secondary text-lg">没有找到匹配的文章</p>
             <p className="text-text-muted text-sm mt-2 flex items-center justify-center gap-1">
               <i className="fa-regular fa-face-sad-tear" />

@@ -18,7 +18,7 @@ export default async function FriendsPage() {
             href="/"
             className="hover:text-rose-500 transition-colors flex items-center gap-1"
           >
-            <i className="fa-regular fa-pagoda" />
+            <i className="fa-regular fa-tree" />
             首页
           </Link>
           <i className="fa-regular fa-chevron-right text-xs text-rose-200" />
@@ -37,7 +37,7 @@ export default async function FriendsPage() {
 
         <div className="relative mx-auto max-w-4xl px-6 pt-10 pb-12 text-center">
           <div className="mx-auto mb-5 w-16 h-16 rounded-full bg-gradient-to-br from-rose-300 via-pink-400 to-rose-500 shadow-lg shadow-rose-200/50 flex items-center justify-center">
-            <i className="fa-duotone fa-solid fa-link text-2xl text-white/90" />
+            <i className="fa-solid fa-link text-2xl text-white/90" />
           </div>
 
           <h1 className="site-title text-3xl sm:text-4xl font-bold tracking-tight">
@@ -54,7 +54,7 @@ export default async function FriendsPage() {
 
           <div className="mt-6 flex items-center justify-center gap-3">
             <span className="h-px w-12 bg-gradient-to-r from-transparent to-rose-300" />
-            <i className="fa-regular fa-sparkle text-rose-300 text-lg" />
+            <i className="fa-regular fa-star text-rose-300 text-lg" />
             <span className="h-px w-12 bg-gradient-to-l from-transparent to-rose-300" />
           </div>
 
@@ -75,7 +75,7 @@ export default async function FriendsPage() {
         {!friends || friends.length === 0 ? (
           <div className="text-center py-20">
             <div className="inline-flex w-20 h-20 rounded-full bg-rose-50 items-center justify-center mb-6">
-              <i className="fa-light fa-handshake text-4xl text-rose-200" />
+              <i className="fa-regular fa-handshake text-4xl text-rose-200" />
             </div>
             <p className="text-text-secondary text-lg">还没有好友</p>
             <p className="text-text-muted text-sm mt-2 flex items-center justify-center gap-1">
@@ -152,7 +152,7 @@ export default async function FriendsPage() {
           >
             <i className="fa-regular fa-arrow-left" />
             返回首页
-            <i className="fa-regular fa-pagoda text-rose-300" />
+            <i className="fa-regular fa-tree text-rose-300" />
           </Link>
         </div>
       </section>

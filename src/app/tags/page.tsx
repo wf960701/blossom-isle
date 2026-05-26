@@ -45,7 +45,7 @@ export default async function TagsPage() {
       {/* 标签网格 */}
       {!tags || tags.length === 0 ? (
         <div className="text-center py-16">
-          <i className="fa-light fa-tags text-5xl text-rose-200 mb-4" />
+          <i className="fa-regular fa-tags text-5xl text-rose-200 mb-4" />
           <p className="text-text-secondary">还没有标签哦</p>
         </div>
       ) : (

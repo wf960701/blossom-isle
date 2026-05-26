@@ -30,7 +30,7 @@ export default async function AdminFriendsPage() {
 
         {!friends || friends.length === 0 ? (
           <div className="text-center py-12">
-            <i className="fa-light fa-link text-4xl text-rose-200 mb-3" />
+            <i className="fa-regular fa-link text-4xl text-rose-200 mb-3" />
             <p className="text-text-muted text-sm">还没有友链</p>
           </div>
         ) : (

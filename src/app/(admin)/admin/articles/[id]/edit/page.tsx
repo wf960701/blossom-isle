@@ -1,6 +1,6 @@
 import { createClient } from "@/lib/supabase/server";
 import { notFound, redirect } from "next/navigation";
-import ArticleEditor from "../../article-editor";
+import ArticleEditor from "../../../article-editor";
 
 export default async function EditArticlePage({
   params,

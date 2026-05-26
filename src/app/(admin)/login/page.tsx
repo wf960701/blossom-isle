@@ -38,7 +38,7 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="text-center mb-10">
           <div className="mx-auto w-16 h-16 rounded-full bg-gradient-to-br from-rose-300 via-pink-400 to-rose-500 shadow-lg shadow-rose-200/50 flex items-center justify-center mb-4">
-            <i className="fa-regular fa-pagoda text-2xl text-white/90" />
+            <i className="fa-regular fa-tree text-2xl text-white/90" />
           </div>
           <h1 className="text-2xl font-bold text-text-primary">花屿管理</h1>
           <p className="text-sm text-text-muted mt-1">登录后管理你的知识花园</p>
